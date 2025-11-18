@@ -1,0 +1,135 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Full-page container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #fff;
+  /* display: flex;
+  flex-direction: column; */
+}
+.button-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c5282;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+/* Forms */
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Buttons */
+button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+  display: inline-block;   /* ✅ prevents full-width stretch */
+  width: auto;             /* ✅ button fits content */
+}
+
+button:hover {
+  background: #2b6cb0;
+}
+
+button + button {
+  margin-left: 0.5rem;
+}
+
+/* Messages */
+.success {
+  color: #2f855a;
+  font-weight: 500;
+}
+
+.error {
+  color: #e53e3e;
+  font-weight: 500;
+}
+
+/* Query cards */
+.query-list {
+  margin-top: 1.5rem;
+  flex: 1;
+}
+
+.query-card {
+  background: #edf2f7;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.query-card strong {
+  font-size: 1.1rem;
+  color: #2c5282;
+}
+
+.query-card div {
+  margin-top: 0.5rem;
+}
+
+.calendly-inline-widget {
+  width: 100%;
+  min-height: 800px;  
+  background-color: #2c5282;
+  border: 1px solid #22364b;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  overflow: hidden;  
+}
+
+
